@@ -1,0 +1,54 @@
+h1{
+    background-color: blue;
+    color: white;
+    padding: 50px;
+    margin-top: 250px;
+    
+    animation: hello2 5s infinite;
+
+    
+    
+}
+@keyframes hello2 {
+0%{
+    transform: rotate(-30deg);
+}
+50%{
+    transform: rotate(30deg);
+}
+100%{
+    transform: rotate(-30deg);
+}
+    
+}
+h1::before{
+    content:'';
+    position: absolute;
+    background-color: brown;
+    height:30%;
+    width:3%;
+border-radius: 30px;
+top: -30%;
+
+
+animation: hello  5s infinite;
+
+}
+@keyframes hello{
+    0%{ margin-left: 0%;
+        
+    }
+    /*50%{
+        margin-left:60%;
+    }*/
+    50%{
+        margin-left: 90%;
+    }
+}
+h1:hover::before{
+    content: '';
+    position: absolute;
+    background-color: yellow;
+    transition: all 2s linear;
+
+}

@@ -1,0 +1,51 @@
+.a{
+    
+    color: white;
+    
+    background-image: url(tayyab.jpg) ;
+height: 50vh;
+    width:70%;
+   
+
+}
+.a::before{
+    content: '';
+    position: absolute;
+    background-color: yellow;
+    height: 50vh;
+    width: 100%;
+    top: 0%;
+  
+   
+    
+}
+.a:hover::before {
+    content:'';
+    position: absolute;
+    background-color: rgb(0, 17, 255);
+    height: 0vh;
+    width: 100%;
+    top: 0%;
+  transition: all 5s linear;
+  border-radius: 50px;
+   
+}
+
+.a::after{
+    content: '';
+    position: absolute;
+    background-color: brown;
+    height: 50vh;
+    width: 100%;  
+   bottom: 0%;
+
+}
+.a:hover::after {
+    content:'';
+    position: absolute;
+    background-color: rgb(0, 17, 255);
+    height: 0vh;
+    width: 100%;
+    bottom: 0%;
+  transition: all 5s linear;
+border-radius: 50px;}
